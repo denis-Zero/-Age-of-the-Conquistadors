@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
-<title>Batalha dos Reinos</title>
+<title>Age of the Conquistadors</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&display=swap">
 <style>
 :root{--gold:#e7b85a;--gold2:#b9863a;--ink:#f3e6c8;--mut:#a8977a;--pn:linear-gradient(180deg,#261b12,#16100b);--bd:#4d3a24;--t:'Cinzel',Georgia,'Times New Roman',serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
@@ -249,14 +249,14 @@ body.mob #menub{font-size:11px;padding:4px 9px;white-space:nowrap;margin-left:au
 <body>
 <svg style="display:none"><symbol id="cr" viewBox="0 0 64 64"><path d="M32 4 56 12v18c0 15-10 26-24 30C18 56 8 45 8 30V12z" fill="#2c5fc8" stroke="#e7b85a" stroke-width="3"/><path d="M20 20 44 44M44 20 20 44" stroke="#f3e6c8" stroke-width="4" stroke-linecap="round"/><path d="M17 17l8 2-5 5zM47 17l-8 2 5 5z" fill="#e7b85a"/></symbol></svg>
 <div id="app">
-<header id="top"><div class="brand"><svg><use href="#cr"/></svg><div><h2>Batalha dos Reinos</h2><span>Estratégia medieval</span></div></div>
+<header id="top"><div class="brand"><svg><use href="#cr"/></svg><div><h2>Age of the Conquistadors</h2><span>Estratégia medieval</span></div></div>
 <ol id="steps"><li id="s1" class="on"><b>1</b>Montagem</li><li id="s2"><b>2</b>Batalha</li><li id="s3"><b>3</b>Resultado</li></ol>
 <button id="menub" type="button">Menu</button><button id="shopb" type="button">Loja</button><button id="bonus" type="button">Bônus</button><div class="lvl"><span id="lvl">Nível</span><b id="lv">1</b></div></header>
 <section id="hud"><div class="side me"><div class="hl"><span id="ml">Seus pontos</span><b id="mv">0</b></div><div class="meter"><i id="mb"></i></div></div><div class="vs">VS</div>
 <div class="side foe"><div class="hl"><span id="el">Poder inimigo</span><b id="ev">0</b></div><div class="meter"><i id="eb"></i></div></div></section>
 <div id="info"><span></span><button id="infx" type="button">×</button></div>
 <div id="wrap"><canvas id="c"></canvas><div id="wp"><b class="t">Chance de vitória</b><div id="wpv">—</div><div id="wpb"><i></i></div><canvas id="wc" width="180" height="46"></canvas><small id="wpn"></small></div>
-<div id="ov" style="display:none"><div class="card"><svg><use href="#cr"/></svg><h1 id="t">Batalha dos Reinos</h1>
+<div id="ov" style="display:none"><div class="card"><svg><use href="#cr"/></svg><h1 id="t">Age of the Conquistadors</h1>
 <p id="d">Monte seu exército no tabuleiro e enfrente as forças inimigas.</p><p id="st"></p>
 <ul class="how" id="how"><li><b>1 · Escolha</b> uma tropa na barra inferior (ou teclas 1 a 9, 0 e -).</li><li><b>2 · Posicione</b> no lado azul da grade. Clique numa tropa para removê-la.</li><li><b>3 · Batalhe</b> inicie o combate e vença para subir de nível.</li><li><b>Novidades</b> Tropas que morrem são perdidas · tropas 🔒 são liberadas com ouro na Loja · pedras e árvores bloqueiam casas · eventos climáticos atingem os dois exércitos.</li><li><b>Comandante</b> (opcional, 1 por exército) usa a habilidade <b>sozinho</b> quando é um bom momento (o indicador no painel mostra a recarga). Se ele cair, a habilidade se perde.</li></ul>
 <button class="a" id="camp">Campanha</button><button class="a s" id="go">Modo livre</button><button class="a s" id="tomap" style="display:none">Ver mapa</button></div></div>
@@ -269,7 +269,7 @@ body.mob #menub{font-size:11px;padding:4px 9px;white-space:nowrap;margin-left:au
 <div id="shop"></div>
 <div id="mm" role="dialog" aria-label="Menu principal">
 <canvas id="mmc" aria-hidden="true"></canvas>
-<div id="mmui"><header id="mmlogo"><svg class="mmcr" aria-hidden="true"><use href="#cr"/></svg><h1>Batalha dos Reinos</h1><p>Monte seu exército e vença a batalha.</p></header>
+<div id="mmui"><header id="mmlogo"><svg class="mmcr" aria-hidden="true"><use href="#cr"/></svg><h1>Age of the Conquistadors</h1><p>Monte seu exército e vença a batalha.</p></header>
 <main id="mmp" aria-live="polite"></main></div>
 <div id="mmbye"><svg aria-hidden="true"><use href="#cr"/></svg><h2>Até a próxima batalha</h2><p>O navegador não permite que uma página feche a própria aba. Seu progresso está salvo; você já pode fechá-la.</p><button type="button" class="mb gh" id="mmbyeb"><span class="l">VOLTAR AO MENU</span></button></div>
 <input type="file" id="mmfile" accept=".json,application/json" hidden>
